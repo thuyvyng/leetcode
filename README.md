@@ -1,7 +1,6 @@
 # leetcode
 
 Calvin recommended easy problems:
-https://leetcode.com/problems/search-insert-position/ 
 https://leetcode.com/problems/fibonacci-number/
 https://leetcode.com/problems/min-cost-climbing-stairs/
 https://leetcode.com/problems/min-stack/ 

@@ -8,3 +8,7 @@ class Solution(object):
                 
         return count
         
+
+class Solution(object):
+    def mostWordsFound(self, sentences):
+         return max(sentence.count(" ") for sentence in sentences)+1

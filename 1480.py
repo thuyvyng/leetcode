@@ -8,7 +8,22 @@ class Solution(object):
         return result
 
 
-p1 = Solution();
+class Solution(object):
+    def runningSum(self, nums):
+        new = []
+        for i in range(len(nums)):
+            new.append(sum(nums[:i+1]))
+        return new
 
-x = p1.runningSum([1,2,3,4])
-print(x)
+class Solution(object):
+    def runningSum(self, nums):
+        count = 0
+        for i, x in enumerate(nums):
+            count = count + x
+            nums[i] = count
+        return nums
+
+def runningSum(self, nums):
+        for i in range(1, len(nums)):
+            nums[i] += nums[i-1] 
+        return nums

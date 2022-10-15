@@ -1,25 +1,21 @@
 class Solution(object):
     def findLucky(self, arr):
         arr = sorted(arr, reverse=True)
-        count = 0
+        print(arr)
 
-        for i in range(0, len(arr)):
-            if count == 0:
-                current = arr[i]
-                
-            if current == arr[i]:
-                count+= 1
-            elif current == count:
-                print("what")
-                return current
-            else:
-                count = 0
-            print(count)
-            
-        print("--------------------")
-        if count == current:
-            return current
+        for i,x in enumerate(arr):
+            print(i)
+            print(x)
+            if x == arr[i + arr[x]]:
+                return x
         return -1
 
-X = Solution()
-print(X.findLucky([2,2,2,3,3]))
+        # arr = sorted(arr, reverse=True)
+        
+        # for x in arr:
+        #     if arr.count(x) == x:
+        #         return x
+        # return None
+
+X= Solution();
+print(X.findLucky([1,2,2,3,3,3]))

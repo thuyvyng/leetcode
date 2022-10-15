@@ -16,9 +16,7 @@ class Solution(object):
                 if popped != checkDict[x]:
                     return False
 
-        if len(test) != 0:
-            return False
-        return True
+        return len(test) == 0
         
 p1 = Solution()
 x = p1.isValid(')[')

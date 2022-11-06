@@ -17,7 +17,7 @@ class Solution(object):
 
 
         i = search(target)
-        return i if i < len(letters) else letters[0]
+        return letters[i] if i < len(letters) else letters[0]
 
 x = Solution()
 x.nextGreatestLetter(['x', 'x', 'y', 'y', 'y'], 'z')
